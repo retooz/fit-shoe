@@ -204,6 +204,7 @@ section {
 body>.resultWrap {
     margin-left: 0;
     margin-right: 15vw;
+    min-height: 75vh;
 }
 
 /* filter */
