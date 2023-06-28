@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="js/getData.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <div class="wrap">
+        <h1>저희가 추천드리는 신발들이에요</h1>
+        <div class="chunkWrapper">
+            <div class="productWrapper">
+                <div class="imgBox">
+                    <img src="src/1.png" alt="">
+                </div>
+                <div class="productText">
+                    <div class="productName">
+                        보노보노
+                    </div>
+                    <div class="productExp">
+                        보노보노입니다
+                    </div>
+                </div>
+            </div>
+            <div class="productWrapper">
+                <div class="imgBox">
+                    <img src="src/2.png" alt="">
+                </div>
+                <div class="productText">
+                    <div class="productName">
+                        포로리
+                    </div>
+                    <div class="productExp">
+                        포로리입니다
+                    </div>
+                </div>
+            </div>
+            <div class="productWrapper">
+                <div class="imgBox">
+                    <img src="src/3.png" alt="">
+                </div>
+                <div class="productText">
+                    <div class="productName">
+                        너부리
+                    </div>
+                    <div class="productExp">
+                        너부리입니다
+                        <br>
+                        안녕하세요<br>
+                        sd
+                    </div>
+                </div>
+            </div>
+            <div class="productWrapper"></div>
+            <div class="productWrapper"></div>
+            <div class="productWrapper"></div>
+            <div class="productWrapper"></div>
+            <div class="productWrapper"></div>
+            <div class="productWrapper"></div>
+        </div>
+    </div>
+    <footer id="footer"></footer>
+    <script>
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    </script>
+</body>
+
+</html>

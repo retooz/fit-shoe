@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/> -->
+    <script src="src/shoes.json" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <section>
+        <div class="wrap">
+            <form action="result.html" method="post" class="investigate">
+                <div class="selection over-3">
+                    <p>찾는 신발의 종류를 선택해주세요.</p>
+                    <div class="selection-form">
+                        <input type="checkbox" name="shoe-category" id="sneakers"><label for="sneakers">스니커즈</label>
+                        <input type="checkbox" name="shoe-category" id="dress-shoes"><label for="dress-shoes">구두</label>
+                        <input type="checkbox" name="shoe-category" id="sandal"><label for="sandal">샌들</label>
+                        <input type="checkbox" name="shoe-category" id="slipper"><label for="slipper">슬리퍼</label>
+                        <input type="checkbox" name="shoe-category" id="running-shoes"><label
+                            for="running-shoes">런닝화</label>
+                        <input type="checkbox" name="shoe-category" id="flat-shoes"><label for="flat-shoes">플랫슈즈</label>
+                    </div>
+                </div>
+                <div class="selection over-3">
+                    <p>선호하는 브랜드가 있나요?</p>
+                    <div class="selection-form">
+                        <input type="checkbox" name="shoe-brand" id="brand1"><label for="brand1">브랜드1</label>
+                        <input type="checkbox" name="shoe-brand" id="brand2"><label for="brand2">브랜드2</label>
+                        <input type="checkbox" name="shoe-brand" id="brand3"><label for="brand3">브랜드3</label>
+                        <input type="checkbox" name="shoe-brand" id="brand4"><label for="brand4">브랜드4</label>
+                        <input type="checkbox" name="shoe-brand" id="brand5"><label for="brand5">브랜드5</label>
+                        <input type="checkbox" name="shoe-brand" id="brand-anything"><label
+                            for="brand-anything">상관없어요</label>
+                    </div>
+                </div>
+                <div class="selection over-3">
+                    <p>원하는 가격대가 있나요?</p>
+                    <div class="selection-form">
+                        <input type="checkbox" name="shoe-price" id="under100k"><label for="under100k">10만원 미만</label>
+                        <input type="checkbox" name="shoe-price" id="under200k"><label for="under200k">10만원 이상 ~ 20만원
+                            미만</label>
+                        <input type="checkbox" name="shoe-price" id="over200k"><label for="over200k">상관없어요</label>
+                    </div>
+                </div>
+                <div class="selection over-3">
+                    <p>찾는 색깔이 있나요?</p>
+                    <div class="selection-form">
+                        <input type="checkbox" name="shoe-color" id="white"><label for="white">흰색</label>
+                        <input type="checkbox" name="shoe-color" id="black"><label for="black">검정색</label>
+                        <input type="checkbox" name="shoe-color" id="color-anything"><label
+                            for="color-anything">상관없어요</label>
+                    </div>
+                </div>
+                <div class="selection">
+                    <div class="selection-form">
+                        <input type="submit" value="나에게 맞는 신발은?" class="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="js/main.js"></script>
+    <script>
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    </script>
+</body>
+
+</html>

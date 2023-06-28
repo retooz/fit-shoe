@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/> -->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+    <header id="header"></header>
+    <section>
+        <div class="wrap">
+            <form action="investigate2.html" method="post" class="investigate">
+                <div class="selection">
+                    <p>나는 발볼이</p>
+                    <div class="selection-form">        
+                        <input type="radio" name="feet-width" id="wide"><label for="wide">넓다</label>
+                        <input type="radio" name="feet-width" id="slim"><label for="slim">좁다</label>
+                    </div>
+                </div>
+                <div class="selection">
+                    <p>나는 발등이</p>
+                    <div class="selection-form" >
+                        <input type="radio" name="feet-height" id="high"><label for="high">높다</label>
+                        <input type="radio" name="feet-height" id="low"><label for="low">낮다</label>
+                    </div>
+                </div>
+                <div class="selection">
+                    <p>나는 평발이</p>
+                    <div class="selection-form">
+                        <input type="radio" name="feet-flat" id="flat"><label for="flat">맞다</label>
+                        <input type="radio" name="feet-flat" id="normal"><label for="normal">아니다</label>
+                    </div>
+                </div>
+                <div class="selection">
+                    <p>찾는 성별을 알려주세요!</p>
+                    <div class="selection-form">
+                        <input type="radio" name="shoe-gender" id="male"><label for="male">남성화</label>
+                        <input type="radio" name="shoe-gender" id="female"><label for="female">여성화</label>
+                    </div>
+                </div>
+                <div class="selection">
+                    <div class="selection-form">
+                        <input type="submit" value="이제 선호도를 알아보겠습니다" class="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer id="footer"></footer>
+    <script src="js/main.js"></script>
+    <script>
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+    </script>
+</body>
+
+</html>
