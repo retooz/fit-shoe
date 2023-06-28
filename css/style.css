@@ -39,6 +39,12 @@ section {
     font-size: 15px;
     background-color: #fff;
     color: #333;
+    transition: all 0.5s ease-in-out;
+}
+
+.selection-form input+label:hover {
+    background-color: #91c5bf;
+    color: #fff;    
 }
 
 .selection-form input:checked+label {
