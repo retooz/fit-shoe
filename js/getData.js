@@ -1,11 +1,14 @@
-$(document).ready(function () {
-    let shoes;
-    const getShoes = () => {
-        fetch('src/shoes.json').then((res) => { return res.json() })
-            .then((data) => {
-                shoes = data;
-            })
-    }
+const getShoes = () => {
+    const request = new XMLHttpRequest();
+    request.open('GET', 'src/shoes.json', false);
+    request.send();
 
-    console.log(shoes);
-})
+    if (request.status === 200) {
+        const data = JSON.parse(request.responseText);
+        console.log(data);
+        shoes = data;
+    }
+};
+let shoes = getShoes()
+getShoes()
+console.log(shoes);

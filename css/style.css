@@ -199,3 +199,57 @@ section {
     margin-top: 10px;
     height: 30px;
 }
+
+body>.resultWrap {
+    margin-left: 0 ;
+    margin-right: 15vw;
+}
+
+/* filter */
+
+.filter-box{
+    position:fixed;
+    width :18vw;
+    /* height : 100px; */
+    border: #91c5bf 1px solid;
+    box-shadow: 0 0 10px 1px #91c5bf;
+    border-radius: 10px;
+    right: 8vw;
+    top : 14vh;
+    font-weight: bold;
+    text-align: center;
+    font-size:20px ;
+}
+
+.filter-box .class {
+    font-size: 18px ;
+    width : 8vw;
+    height : 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter-box legend {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.filter-box .selection-form {
+    margin: 20px auto 0;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.filter-box .filter-check {
+    margin: 0;
+    width: 70px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.filter-box legend, .filter-box .filter-check {
+    margin-left: 15px;
+}

@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/getData.js"></script>
 </head>
 
 <body>
     <header id="header"></header>
-    <div class="wrap">
+    <div class="resultWrap wrap">
         <h1>저희가 추천드리는 신발들이에요</h1>
         <div class="chunkWrapper">
             <div class="productWrapper">
@@ -67,6 +67,40 @@
             <div class="productWrapper"></div>
         </div>
     </div>
+    <div class="filter-box">
+        <div class="selection-form">
+            <legend>발볼</legend>
+            <input type="radio" name="feet-width" id="wide" checked> <label for="wide" class="filter-check">넓다</label>
+            <input type="radio" name="feet-width" id="slim"><label for="slim" class="filter-check">좁다</label>
+        </div>
+        <div class="selection-form">
+            <legend>발등</legend>
+            <input type="radio" name="feet-height" id="high"> <label for="high" class="filter-check">높다</label>
+            <input type="radio" name="feet-height" id="low" checked><label for="low" class="filter-check">보통</label>
+        </div>
+        <div class="selection-form">
+            <legend>평발</legend>
+            <input type="radio" name="feet-flat" id="flat"> <label for="flat" class="filter-check">높다</label>
+            <input type="radio" name="feet-flat" id="normal" checked><label for="normal" class="filter-check">보통</label>
+        </div>
+        <div class="selection-form">
+            <legend>성별</legend>
+            <input type="radio" name="shoe-gender" id="male"> <label for="male" class="filter-check">남성화</label>
+            <input type="radio" name="shoe-gender" id="female" checked><label for="female" class="filter-check">여성화</label>
+        </div>
+        <div class="selection-form">
+            <legend>종류</legend>
+            <input type="checkbox" name="shoe-category" id="sneakers"> <label for="sneakers" class="filter-check">스니커즈</label>
+            <input type="checkbox" name="shoe-category" id="sandal"> <label for="sandal" class="filter-check">샌들</label>
+            <input type="checkbox" name="shoe-category" id=""> <label for="" class="filter-check"> </label>
+            <input type="checkbox" name="shoe-category" id=""> <label for="" class="filter-check"> </label>
+            <input type="checkbox" name="shoe-category" id=""> <label for="" class="filter-check"> </label>
+            <input type="checkbox" name="shoe-category" id=""> <label for="" class="filter-check"> </label>
+            
+        </div>
+        <button class="submit class">적용</button>
+    </div>
+
     <footer id="footer"></footer>
     <script>
         $("#header").load("header.html");
