@@ -22,10 +22,8 @@ $(document).ready(function() {
     $('input[name=shoe-brand]').change(function(){
         $('.selection:nth-child(3)').fadeIn(500);
     })
-    $('input[name=shoe-price]').change(function(){
+    $('input[name=shoe-color]').change(function(){
         $('.selection:nth-child(4)').fadeIn(500);
     })
-    $('input[name=shoe-color]').change(function(){
-        $('.selection:nth-child(5)').fadeIn(500);
-    })
+    
 })
