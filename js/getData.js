@@ -8,6 +8,7 @@ const getShoes = () => {
         return data;
     }
 };
+
 let shoes = getShoes()
 let showHTML = [];
 let showDataArr = [];
@@ -16,7 +17,6 @@ let showBrand = [];
 const initialize = () => {
     shoes.forEach(element => {
         if (element.category == 'Running' && !showDataArr.includes(element.shoeName)) {
-            // showDataArr.append(element);
             showHTML.push(`<div class="productWrapper">
             <div class="imgBox">
                 <a href="${element.url}"><img src="src/${element.ShoeId}.jpg" alt=""></a>
@@ -26,7 +26,7 @@ const initialize = () => {
                     ${element.brand}
                 </div>
                 <div class="productExp">
-                    ${element.shoeName}
+                    ${element.shoeName}<br><br>${element.price}₩
                 </div>
             </div>
         </div>`)
@@ -65,7 +65,7 @@ $('#filter-accept').on('click', function () {
                     ${element.brand}
                 </div>
                 <div class="productExp">
-                    ${element.shoeName}
+                    ${element.shoeName}<br><br>${element.price}₩
                 </div>
             </div>
         </div>`)
@@ -85,7 +85,7 @@ $('#filter-accept').on('click', function () {
                     ${element.brand}
                 </div>
                 <div class="productExp">
-                    ${element.shoeName}
+                    ${element.shoeName}<br><br>${element.price}₩
                 </div>
             </div>
         </div>`)
@@ -105,7 +105,7 @@ $('#filter-accept').on('click', function () {
                     ${element.brand}
                 </div>
                 <div class="productExp">
-                    ${element.shoeName}
+                    ${element.shoeName}<br><br>${element.price}₩
                 </div>
             </div>
         </div>`)
@@ -116,7 +116,7 @@ $('#filter-accept').on('click', function () {
     if (showBrand.length == 0 && showCategory.length == 0) {
         shoes.forEach(element => {
             if (!showDataArr.includes(element.shoeName)) {
-                showHTML.push(`<div class="productWrapper"><div class="imgBox"><a href="${element.url}"><img src="src/${element.ShoeId}.jpg" alt=""></a></div><div class="productText"><div class="productName">${element.brand}</div><div class="productExp">${element.shoeName}</div></div></div>`)
+                showHTML.push(`<div class="productWrapper"><div class="imgBox"><a href="${element.url}"><img src="src/${element.ShoeId}.jpg" alt=""></a></div><div class="productText"><div class="productName">${element.brand}</div><div class="productExp">${element.shoeName}<br><br>${element.price}₩</div></div></div>`)
                 showDataArr.push(element.shoeName)
             }
         })
