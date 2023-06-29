@@ -179,7 +179,7 @@ section {
     align-self: center;
 }
 
-.imgBox>img {
+.imgBox img {
     max-height: 100%;
     max-width: 100%;
 }
